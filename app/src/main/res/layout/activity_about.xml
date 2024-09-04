@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="32dp"
+    android:background="@drawable/main_content_background"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anggota Kelompok"
+        android:textSize="20sp"
+        android:textColor="@color/pclr5"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Ikmal Al-Ansory"
+        android:textSize="16dp"
+        android:textColor="@color/pclr5"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Aspian"
+        android:textSize="16sp"
+        android:textColor="@color/pclr5"
+        android:layout_marginBottom="2dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Nazwan Ali"
+        android:textSize="16dp"
+        android:textColor="@color/pclr5"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutup"
+        android:textColor="@color/pclr1"
+        android:backgroundTint="@color/pclr3"/>
+
+</LinearLayout>
