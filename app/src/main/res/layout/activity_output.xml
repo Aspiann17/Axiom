@@ -12,9 +12,9 @@
     android:background="@drawable/main_content_background">
 
     <TextView
+        android:id="@+id/nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="nama"
         android:textSize="20dp"
         android:textColor="@color/pclr5"
         android:textAlignment="center"
