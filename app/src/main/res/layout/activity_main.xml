@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/pclr3">
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/pclr1"-->
+<!--        android:layout_height="8dp" />-->
+
+<!--    <View-->
+<!--        android:layout_width="16dp"-->
+<!--        android:background="@drawable/toplefthead"-->
+<!--        android:layout_height="8dp" />-->
+<!--    <View-->
+<!--        android:layout_width="16dp"-->
+<!--        android:background="@drawable/toprighthead"-->
+<!--        android:layout_height="8dp"-->
+<!--        android:layout_alignParentRight="true"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/main_header_background"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/head"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AXIOM"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/pclr3"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_about" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data_diri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_marginBottom="28dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/main_content_background"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/h2"
+            android:text="Data Diri" />
+
+        <TextView
+            style="@style/main_sublabel"
+            android:text="Nama" />
+
+        <EditText style="@style/main_edit_text" />
+
+        <TextView
+            style="@style/main_sublabel"
+            android:text="Kelas" />
+
+        <EditText style="@style/main_edit_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/data_diri"
+        android:padding="16dp"
+        android:background="@drawable/main_content_background"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/h2"
+            android:layout_marginBottom="25dp"
+            android:text="Nilai Mata Pelajaran" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="48dp">
+
+            <LinearLayout style="@style/main_content_column" >
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="Bahasa Indonesia" />
+
+                    <EditText style="@style/main_edit_text" />
+
+                </LinearLayout>
+
+                <View style="@style/main_content_item_view" />
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="Bahasa Inggris" />
+
+                    <EditText style="@style/main_edit_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/main_content_column" >
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="Matematika" />
+
+                    <EditText style="@style/main_edit_text" />
+
+                </LinearLayout>
+
+                <View style="@style/main_content_item_view" />
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="Sejarah" />
+
+                    <EditText style="@style/main_edit_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/main_content_column" >
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="PPKN" />
+
+                    <EditText style="@style/main_edit_text" />
+
+                </LinearLayout>
+
+                <View style="@style/main_content_item_view" />
+
+                <LinearLayout style="@style/main_content_item" >
+
+                    <TextView
+                        style="@style/main_sublabel"
+                        android:text="PAI" />
+
+                    <EditText style="@style/main_edit_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/pclr2"
+            android:text="Hitung" />
+
+    </LinearLayout>
+
+</RelativeLayout>
