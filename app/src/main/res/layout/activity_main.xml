@@ -33,12 +33,6 @@
             android:layout_marginStart="8dp"
             android:layout_weight="1"/>
 
-        <ImageView
-            android:id="@+id/about"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/icon_about" />
-
     </LinearLayout>
 
     <LinearLayout
