@@ -12,7 +12,7 @@
     android:background="@drawable/main_content_background">
 
     <TextView
-        android:id="@+id/nama"
+        android:id="@+id/output_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
@@ -38,6 +38,7 @@
         android:textAlignment="center" />
 
     <TextView
+        android:id="@+id/output_nilai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
@@ -47,6 +48,7 @@
         android:layout_marginBottom="16dp"/>
 
     <Button
+        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kembali"
