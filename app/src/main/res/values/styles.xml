@@ -17,6 +17,9 @@
         <item name="android:textColor">@color/pclr5</item>
         <item name="android:background">@drawable/main_input_style</item>
         <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="main_edit_text_number" parent="main_edit_text">
         <item name="android:inputType">number</item>
     </style>
 
