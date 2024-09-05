@@ -1,6 +1,10 @@
 # Axiom
+## Contributor
+- [Muhammad Ikmal Al-Ansory](https://github.com/Malsoryz/)
+- [Muhammad Nazwan Ali](https://github.com/UserMNA)
+- [Muhammad Aspian](https://github.com/Aspiann17)
 
-## -
+## Implementation
 - Dialog
 - Simple Splash Screen
 
