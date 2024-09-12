@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("DefaultLocale")
     public void hitung(View v) {
         float result = 0;
-        EditText raw_nama = findViewById(R.id.nama);
-        String nama = raw_nama.getText().toString();
         EditText[] mata_pelajaran = {
                 findViewById(R.id.bahasa_indonesia),
                 findViewById(R.id.bahasa_inggris),
@@ -43,19 +41,21 @@ public class MainActivity extends AppCompatActivity {
 
         for (EditText mapel : mata_pelajaran) {
             String raw = mapel.getText().toString();
-            result += (raw.isEmpty()) ? 0 : Float.parseFloat(raw);
+            result += (raw.isEmpty()) ? 0 : Float.parseFloat(raw); // Input kosong akan dianggap '0'
         }
 
         Dialog dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.layout_output);
 
+        EditText raw_nama = findViewById(R.id.nama);
+        String nama = raw_nama.getText().toString();
         TextView output_nama = dialog.findViewById(R.id.output_nama);
         TextView output_nilai = dialog.findViewById(R.id.output_nilai);
 
         output_nama.setText(nama);
-        output_nilai.setText(String.format("%.2f", result / 6));
+        output_nilai.setText(String.format("%.2f", result / mata_pelajaran.length));
 
-        dialog.show();
         dialog.findViewById(R.id.back).setOnClickListener(view -> dialog.dismiss());
+        dialog.show();
     }
 }
